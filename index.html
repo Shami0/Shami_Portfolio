@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shami — Backend Developer</title>
+<meta name="description" content="Shami — self-taught backend developer. Projects, skills, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <a href="#top" class="mark">shami<span class="dot">.</span>dev</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Backend developer</p>
+      <h1>I build the parts of a product<br>you never see, but always feel.</h1>
+      <p class="hero-sub">Shami — a self-taught developer working in TypeScript, Python and SQL,
+      focused on APIs, data models, and the small decisions that keep a system easy to reason about
+      six months later.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-panel" aria-hidden="true">
+      <div class="panel-head">
+        <span class="req-line"><span class="verb">GET</span> /shami/profile</span>
+      </div>
+      <pre class="panel-body"><code><span class="p">{</span>
+  <span class="k">"role"</span>: <span class="s">"backend developer"</span>,
+  <span class="k">"status"</span>: <span class="s">"open to work"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"typescript"</span>, <span class="s">"python"</span>, <span class="s">"sql"</span>],
+  <span class="k">"currently_learning"</span>: <span class="s">"docker, pub/sub"</span>,
+  <span class="k">"location"</span>: <span class="s">"remote-friendly"</span>
+<span class="p">}</span></code></pre>
+      <div class="panel-foot">200 OK · 4ms</div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>Selected work</h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project">
+        <div class="project-num">A</div>
+        <div class="project-body">
+          <h3>LifeStack</h3>
+          <p class="project-tags">Kotlin · Room · MVVM · Android</p>
+          <p class="project-desc">A native Android habit and life-tracking app, built end to end
+          with a Room-backed data layer and an MVVM architecture — the project that pushed me from
+          following tutorials to owning an app's structure myself.</p>
+        </div>
+        <a class="project-link" href="#" data-placeholder="lifestack-repo">Repo ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-num">B</div>
+        <div class="project-body">
+          <h3>Tubely</h3>
+          <p class="project-tags">Bun · TypeScript · S3 · CloudFront</p>
+          <p class="project-desc">A backend file server for video uploads, handling storage on S3
+          and delivery through CloudFront — built while working through file servers and CDN
+          fundamentals from the ground up rather than wiring in a managed upload widget.</p>
+        </div>
+        <a class="project-link" href="#" data-placeholder="tubely-repo">Repo ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-num">C</div>
+        <div class="project-body">
+          <h3>Worldbuilding API</h3>
+          <p class="project-tags">TypeScript · REST · Relational data</p>
+          <p class="project-desc">A REST API for managing a fantasy world's lore — characters,
+          power systems, maps, and timelines as interlinked resources. A project chosen to practice
+          modelling relationships that are messier than a typical CRUD demo.</p>
+        </div>
+        <a class="project-link" href="#" data-placeholder="worldbuilding-repo">Repo ↗</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>C</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Backend &amp; infra</h4>
+        <ul><li>HTTP servers</li><li>REST APIs</li><li>File servers &amp; CDNs</li><li>Docker</li><li>Pub/Sub architecture</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Data</h4>
+        <ul><li>PostgreSQL</li><li>Schema design</li><li>Room (Android)</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Tooling</h4>
+        <ul><li>Git</li><li>Linux</li><li>MVVM</li><li>OOP &amp; functional patterns</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-body">
+      <p>I'm a self-taught developer on a deliberate gap year, using it to go deep on backend
+      fundamentals instead of collecting frameworks. My path started with CS50 and general web
+      development, and has since moved into structured, project-based backend work — HTTP from
+      first principles, data modelling, file storage, and the operational layer underneath a
+      product.</p>
+      <p>I like systems that are easy to explain to the next person who reads the code. Most of
+      what's on this page was built slowly and on purpose, one course or one project at a time.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-body">
+      <p>Open to backend roles, remote or in India. The quickest way to reach me:</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="#" data-placeholder="github">GitHub ↗</a>
+        <a href="#" data-placeholder="linkedin">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <span>Built by hand, no framework.</span>
+  <span class="year"></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
